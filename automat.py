@@ -5,5 +5,5 @@ driver = webdriver.Chrome(executable_path='D:\driver do przgladarek\chromedriver
 driver.get('https://poczta.interia.pl/logowanie/#iwa_source=sg_ikona')
 title=driver.title
 print(title)
-assert title=='Konto Interia'
+assert 'Konto Interia'==title
 driver.close()
